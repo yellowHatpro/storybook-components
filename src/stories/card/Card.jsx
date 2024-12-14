@@ -5,9 +5,6 @@ import { Loader } from "lucide-react";
 export const Card = ({
   image,
   title,
-  subtitle,
-  body,
-  bottom,
   backgroundColor,
   padding,
   size = "sm",
@@ -85,10 +82,7 @@ export const Card = ({
 Card.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
   headingIcon: PropTypes.string,
-  body: PropTypes.string.isRequired,
-  bottom: PropTypes.string.isRequired,
   color: PropTypes.oneOf(options.colors),
   size: PropTypes.oneOf(options.sizes),
   backgroundColor: PropTypes.string,
